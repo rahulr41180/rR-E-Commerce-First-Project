@@ -15,6 +15,7 @@ import { connectDB } from "./config/db.js";
 import colors from "colors";
 import dotenv from "dotenv";
 import path from "path";
+import { fileURLToPath } from "url";
 import authRoutes from "./routes/authRoutes.js";
 import categoryRoutes from "./routes/categoryRoute.js";
 import productRoutes from "./routes/productRoutes.js";
@@ -45,8 +46,9 @@ app.use(express.json()); // we enable to send also json data.
 
 app.use(morgan("dev")); // For checking which APIs hits.
 
-const __dirname = path.resolve();
-console.log('__dirname:', __dirname)
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+// console.log('__dirname:', __dirname)
 app.use(express.static(path.join(__dirname, "./client/build")))
 // console.log('path.join(__dirname, "./client"):', path.join(__dirname, "./client/build"))
 // routes
