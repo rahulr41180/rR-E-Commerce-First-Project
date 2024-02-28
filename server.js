@@ -49,8 +49,8 @@ app.use(morgan("dev")); // For checking which APIs hits.
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 // console.log('__dirname:', __dirname)
-app.use(express.static(path.join(__dirname, "./client/build")))
-// console.log('path.join(__dirname, "./client"):', path.join(__dirname, "./client/build"))
+app.use(express.static(path.join(__dirname, "/client/build")))
+// console.log('path.join(__dirname, "./client"):', path.join(__dirname, "/client/build"))
 // routes
 
 
@@ -64,7 +64,7 @@ app.use("/api/v1/braintree-payment-orders", braintreePaymentGatewayOrders);
 app.get("*", (req, res) => {
     
     // We are getting the build folder with the help of express.static() and here we are sending the index.html file to client
-    res.sendFile(path.join(__dirname, "./client/build/index.html"))
+    res.sendFile(path.join(__dirname, "/client/build/index.html"))
 })
 
 // PORT

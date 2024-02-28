@@ -70,14 +70,15 @@ export const HomePage = () => {
 
 
     const getAllCategories = async () => {
+        
         try {
-            const { data } = await axios.get(`${process.env.REACT_APP_API}/api/v1/category/get-all-categories`);
+            const { data } = await axios.get(`/api/v1/category/get-all-categories`);
             // Optional Chaining
             if (data?.status) {
 
                 setCategories(data.allCategories);
             }
-            // console.log("data :", data);
+            console.log("data :", data);
 
         } catch (error) {
             

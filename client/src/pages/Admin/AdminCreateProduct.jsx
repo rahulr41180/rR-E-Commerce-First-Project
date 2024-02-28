@@ -33,7 +33,7 @@ export const AdminCreateProduct = () => {
 
     const getAllCategories = async () => {
         try {
-            const { data } = await axios.get(`${process.env.REACT_APP_API}/api/v1/category/get-all-categories`);
+            const { data } = await axios.get(`/api/v1/category/get-all-categories`);
             // Optional Chaining
             if (data?.status) {
 
@@ -85,7 +85,7 @@ export const AdminCreateProduct = () => {
             productData.append("shipping", formData.shipping);
             productData.append("photo", photo);
 
-            const { data } = await axios.post(`${process.env.REACT_APP_API}/api/v1/product/create-product`, productData);
+            const { data } = await axios.post(`/api/v1/product/create-product`, productData);
             // console.log('data:', data)
             if (data.status) {
                 toast.success(data.message);

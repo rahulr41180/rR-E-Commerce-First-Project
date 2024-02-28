@@ -65,7 +65,7 @@ export const AdminUpdateProduct = () => {
 
     const getAllCategories = async () => {
         try {
-            const { data } = await axios.get(`${process.env.REACT_APP_API}/api/v1/category/get-all-categories`);
+            const { data } = await axios.get(`/api/v1/category/get-all-categories`);
             // Optional Chaining
             if (data?.status) {
                 setCategories(data.allCategories);
@@ -119,7 +119,7 @@ export const AdminUpdateProduct = () => {
 
             photo && productData.append("photo", photo);
 
-            const { data } = await axios.put(`${process.env.REACT_APP_API}/api/v1/product/update-product/${formData.id}`, productData);
+            const { data } = await axios.put(`/api/v1/product/update-product/${formData.id}`, productData);
             // console.log('data:', data)
             if (data.status) {
                 toast.success(data.message);

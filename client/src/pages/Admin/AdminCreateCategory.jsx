@@ -23,7 +23,7 @@ export const AdminCreateCategory = () => {
 
         event.preventDefault();
         try {
-            const { data } = await axios.post(`${process.env.REACT_APP_API}/api/v1/category/create-category`, {
+            const { data } = await axios.post(`/api/v1/category/create-category`, {
                 name : categoryName
             })
             // console.log("data :", data);
@@ -51,7 +51,7 @@ export const AdminCreateCategory = () => {
     const getAllCategories = async () => {
         try {
 
-            const { data } = await axios.get(`${process.env.REACT_APP_API}/api/v1/category/get-all-categories`);
+            const { data } = await axios.get(`/api/v1/category/get-all-categories`);
             if(data?.status) {
                 setCategories(data.allCategories);
             }

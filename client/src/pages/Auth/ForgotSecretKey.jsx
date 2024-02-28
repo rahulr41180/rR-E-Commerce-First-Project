@@ -36,7 +36,7 @@ export const ForgotSecretKey = () => {
         // toast.success("Register Successfully..");
         try {
 
-            const res = await axios.post(`${process.env.REACT_APP_API}/api/v1/auth/forgot-secret-key`, {
+            const res = await axios.post(`/api/v1/auth/forgot-secret-key`, {
                 email : formData.email,
                 newSecretKey : formData.newSecretKey,
             });

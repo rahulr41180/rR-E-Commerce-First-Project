@@ -24,7 +24,7 @@ export const AdminPrivateRoute = () => {
             // console.log("Function Calling..")
             try {
                 
-                const res = await axios.get(`${process.env.REACT_APP_API}/api/v1/auth/admin-auth`, {
+                const res = await axios.get(`/api/v1/auth/admin-auth`, {
                     // Have seted common Authorization value of headers in AuthContext
                     // headers : {
                     //     "Authorization" : auth?.token
