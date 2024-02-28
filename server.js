@@ -64,7 +64,8 @@ app.use("/api/v1/braintree-payment-orders", braintreePaymentGatewayOrders);
 app.get("*", (req, res) => {
     
     // We are getting the build folder with the help of express.static() and here we are sending the index.html file to client
-    res.sendFile(path.join(__dirname, "/client/build/index.html"))
+    // res.sendFile(path.join(__dirname, "/client/build/index.html"))
+    res.sendFile(path.join(__dirname, "build", "index.html"))
 })
 
 // PORT
