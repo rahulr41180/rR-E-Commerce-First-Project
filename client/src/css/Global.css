@@ -1,0 +1,56 @@
+
+.navLinkUnderLink {
+
+    border: none;
+}
+
+.height100 { height: 100%; }
+.height98 { height: 98%; }
+.height92 { height: 92%; }
+.height90 { height: 90%;  }
+.height85 { height: 85%; }
+
+.height75 { height: 75%; }
+
+.height70 { height: 70%; }
+.height60 { height: 60%; }
+.height50 { height: 50%; }
+.height39 { height: 39%; }
+.height25 { height: 25%; }
+.height20 { height: 20%; }
+
+.width100 { width: 100%; }
+
+.width90 { width: 90%; }
+.width80 { width: 80%; }
+.width75 { width: 75%; }
+
+.width70 { width: 70%; }
+.width60 { width: 60%; }
+.width40 { width: 40%; }
+.width30 { width: 30%; }
+.width25 { width: 25%; }
+.width20 { width: 20%; }
+.width18 { width: 18%; }
+
+.width16 { width: 16%; }
+.width15 { width: 15%; }
+.width14 { width: 14%; }
+.width12 { width: 12%; }
+.width10 { width: 10%; }
+.width9 { width: 9%; }
+.width8 { width: 8%; }
+.width7 { width: 7%; }
+.width6 { width: 6%; }
+.width5 { width: 5%; }
+.width4 { width: 4%; }
+.width2 { width: 2%; }
+
+.width1 { width: 1%; }
+.width0 { width: 0%; }
+
+
+.border_blue { border: 1px solid blue !important; }
+.border_Silver { border: 1px solid silver !important; }
+
+.border_black { border: 1px solid !important; }

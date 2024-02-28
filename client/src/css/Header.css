@@ -1,0 +1,7 @@
+
+#category_dropdown {
+
+    height: 16rem;
+    overflow-y: scroll;
+    overflow-x: unset;
+}
